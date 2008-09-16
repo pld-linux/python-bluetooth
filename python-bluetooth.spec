@@ -2,7 +2,7 @@
 Summary:	Python API for Bluetooth resources
 Name:		python-bluetooth
 Version:	0.15
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://pybluez.googlecode.com/files/%{realname}-%{version}.tar.gz
@@ -13,6 +13,7 @@ BuildRequires:	python-devel >= 1:2.3.0
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
+Obsoletes:	python-pybluez <= 0.15
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
