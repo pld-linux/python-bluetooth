@@ -1,5 +1,6 @@
 %define		realname PyBluez
 Summary:	Python API for Bluetooth resources
+Summary(pl.UTF-8):	API Pythona do obsługi urządzeń Bluetooth
 Name:		python-bluetooth
 Version:	0.15
 Release:	2
@@ -17,9 +18,14 @@ Obsoletes:	python-pybluez <= 0.15
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-PyBluez is an effort to create python wrappers around system Bluetooth
+PyBluez is an effort to create Python wrappers around system Bluetooth
 resources to allow Python developers to easily and quickly create
 Bluetooth applications.
+
+%description -l pl.UTF-8
+PyBluez to próba stworzenia pythonowej obudowy dla zasobów systemowych
+Bluetooth w celu umożliwienia programistom Pythona łatwego i szybkiego
+tworzenia aplikacji Bluetooth.
 
 %prep
 %setup -q -n %{realname}-%{version}
