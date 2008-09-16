@@ -3,8 +3,8 @@ Summary:	Python API for Bluetooth resources
 Summary(pl.UTF-8):	API Pythona do obsługi urządzeń Bluetooth
 Name:		python-bluetooth
 Version:	0.15
-Release:	2
-License:	MIT
+Release:	3
+License:	GPL v2+
 Group:		Libraries/Python
 Source0:	http://pybluez.googlecode.com/files/%{realname}-%{version}.tar.gz
 # Source0-md5:	104ad743d4bc999796ceff4f39d1003a
@@ -49,6 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc CHANGELOG README
 %{py_sitedir}/%{realname}-%{version}-py*.egg-info
 %dir %{py_sitedir}/bluetooth
 %{py_sitedir}/bluetooth/*.py[co]
