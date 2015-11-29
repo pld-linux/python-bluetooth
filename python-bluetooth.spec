@@ -12,7 +12,7 @@ URL:		http://code.google.com/p/pybluez/
 BuildRequires:	bluez-libs-devel
 BuildRequires:	python-devel >= 1:2.3.0
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 %pyrequires_eq	python-modules
 Obsoletes:	python-pybluez <= 0.15
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
